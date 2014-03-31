@@ -1,0 +1,67 @@
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	position: relative;
+	display: block;
+	height: 40px;
+    margin: 0 0;
+	background: url('../images/nav-icon.svg') no-repeat 0px center;
+	text-align: left;
+}
+
+.nav-btn,
+.nav-btn:hover,
+.nav-btn:active{
+	background: url('../images/nav-icon-blue.svg') no-repeat 0px center;
+}
+
+.nav-top {
+    width: 100%;
+    margin: 0 0;
+    position:relative;
+    text-align:center;
+}
+
+.resp-footer {
+	display: none;
+}
+
+/*Toggle Nav*/
+
+.nav-top {
+    max-height: 0px;
+    -webkit-transition: max-height 350ms linear;
+}
+
+.nav-top[data-state="expanded"]{
+    max-height: 15em;
+    height: 100%;
+}
+
+
+@media only screen and (min-width: 25em) {
+	
+	.nav-top {
+		max-height: 0px;
+		-webkit-transition: max-height 350ms linear;
+	}
+
+	.nav-top[data-state="expanded"]{
+		max-height: 5em;
+		height: 100%;
+	}
+	
+}
+
+@media only screen and (min-width: 38em) {
+	
+	footer.init-footer {
+		display: none;
+	}
+	
+	.resp-footer {
+		display: block;
+	}
+	
+}
