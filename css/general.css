@@ -224,7 +224,7 @@ dt>a:focus:after {
 	z-index: 9000;
 	-webkit-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in;
-	border-radius: 0 0 0 3px;
+	border-radius: 3px 0 0 3px;
 }
 
 .get-ticket:hover {
@@ -247,6 +247,10 @@ dt>a:focus:after {
 		padding: 1rem;
 		z-index: 9000;
 		right: 0rem;
+	}
+	
+	.contest {
+		top: 9rem;
 	}
 
 }
@@ -276,9 +280,9 @@ footer, .resp-footer {
 	background-image: url(../images/twitter.svg);
 }
 
-.facebook {
+.instagram {
 	height: 1.5rem;
-	background-image: url(../images/facebook.svg);
+	background-image: url(../images/instagram.svg);
 }
 
 .twitter:hover {
@@ -286,9 +290,9 @@ footer, .resp-footer {
 	background-image: url(../images/twitter-blue.svg);
 }
 
-.facebook:hover {
+.instagram:hover {
 	height: 1.5rem;
-	background-image: url(../images/facebook-blue.svg);
+	background-image: url(../images/instagram-blue.svg);
 }
 
 
