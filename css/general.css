@@ -20,13 +20,14 @@ html {
 /*CSS Starts*/
 
 html, body {
-	background-color: #00B8E6;
+	background-color: #fffefe;
 	font-family: Helvetica, sans-serif;
 	font-weight: 400;
 	line-height: 1.45;
 	color: #3B3A3C;
 	font-size: .9em;
 	padding: 2% 0 3rem;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 header {
@@ -132,7 +133,7 @@ h4, dd,f .cuatro {font-size: 1.25em;}
 
 h5, .cinco {font-size: 1em;}
 
-small, .font_small {font-size: 0.8em;}
+small, .font_small {font-size: 0.75em;}
 
 .flex-img {
 	width: 100%;
@@ -200,11 +201,15 @@ dt>a:focus:after {
 }
 
 .white {
-	color: #fff;
+	color: #00B8E6;
 }
 
 .brand {
 	font-weight: 800;
+}
+
+.space {
+	letter-spacing: 0.04em;
 }
 
 .logos {
@@ -216,10 +221,9 @@ dt>a:focus:after {
 .button, .get-ticket {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: .8em;
-	background-color: #fff;
-	padding: 1em 2.5em;
-	border-radius: 3px;
+	background-color: none;
+	padding: 1em 2.5em 0;
+	border-top: solid 6px #00B8E6
 }
 
 .get-ticket {
@@ -229,13 +233,11 @@ dt>a:focus:after {
 	z-index: 9000;
 	-webkit-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in;
-	border-radius: 3px 0 0 3px;
 }
-
+/*
 .get-ticket:hover {
-	border-top: solid 7px white;
-	background-color: rgba(255,255,255,.6);
-}
+	border-top: solid 8px #00B8E6;
+}*/
 
 .button:hover {
 	background-color: rgba(255,255,255,.6);
@@ -249,17 +251,14 @@ dt>a:focus:after {
 	}
 	
 	.get-ticket {
-		position: fixed;
 		top: 5rem;
-		max-width: 15rem;
-		background-color: #fff;
-		padding: 1rem;
-		z-index: 9000;
+		max-width: 12.5em;
+		padding: 0.3em;
 		right: 0rem;
 	}
 	
 	.contest {
-		top: 9rem;
+		top: 12rem;
 	}
 
 }
