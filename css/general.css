@@ -381,7 +381,7 @@ footer, .resp-footer {
 
 .heart:before {
 	position: absolute;
-	content: url(/images/heart-01.svg);
+	content: url(../images/heart-01.svg);
 	height: 15px;
 	width: 15px;
 	left: -24px;
