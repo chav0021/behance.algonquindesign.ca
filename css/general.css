@@ -100,6 +100,11 @@ header {
 		margin: 0rem .75rem .5rem;
 	}
 	
+	.contest-title {
+		margin-top: 2rem;
+		margin-bottom: -1.25rem;
+	}
+	
 }
 
 .main {
@@ -129,7 +134,7 @@ dt {
 	margin-top: .5rem;
 }
 
-h4, dd, .cuatro {font-size: 1.25em;}
+h4, dd,f .cuatro {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
 
