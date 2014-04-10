@@ -62,7 +62,7 @@ nav a:focus {
 /* Effect 4: bottom border enlarge */
 
 .cl-effect-5 a {
-padding: .3em .4em;
+	padding: .45em 0;
 }
 
 .cl-effect-5 a::after {
@@ -82,6 +82,6 @@ padding: .3em .4em;
 
 .cl-effect-5 a:hover::after,
 .cl-effect-5 a:focus::after {
-	height: 45px;
+	height: 48px;
 	opacity: 1;
 }

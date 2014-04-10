@@ -76,8 +76,10 @@ header {
 		position: fixed;
 		left: 0;
 		top: 0;
-		bottom:2rem;
-		max-width: 18rem;
+		bottom:0;
+		height: 100%;
+		max-width: 21rem;
+		z-index: 8000;
 	}
 	
 	.schedule-part {
@@ -111,10 +113,14 @@ header {
 
 ::selection {
 	color: #fff;
-	background: #3B3A3C;
+	background: #00B8E6;
 }
 
 p {margin-bottom: 1.3em;}
+
+.p-large {
+	font-size: 1.4em;
+}
 
 h1, .uno {
   margin-top: 0;
@@ -123,9 +129,10 @@ h1, .uno {
 
 h2, .dos {font-size: 1.953em;}
 
-h3, dt, .tres {font-size: 1.563em; font-weight: 800;}
+h3, dt, .tres {font-size: 1.563em;}
 
 dt {
+	font-weight: 800;
 	margin-top: .5rem;
 }
 
@@ -135,6 +142,10 @@ h5, .cinco {font-size: 1em;}
 
 small, .font_small {font-size: 0.75em;}
 
+.no-margin {
+	margin-bottom: 0;
+}
+
 .flex-img {
 	width: 100%;
 	display: block;
@@ -143,7 +154,8 @@ small, .font_small {font-size: 0.75em;}
 
 section {
 	max-width: 95%;
-	margin: 2rem auto 0;
+	margin: 3rem auto 0;
+	border-bottom: solid 2px #;
 }
 
 ul {
@@ -151,26 +163,32 @@ ul {
 }
 
 em {
-	margin-left: 5px;
-	color: rgba(255,255,255,.6);
+	margin-left:8px;
+	color: #3b3a3c;
 }
 
 a {
 	text-decoration: none;
-	color: #3B3A3C;
-}
-
-dd a{
-	border-bottom: 1px solid #3b3a3c;
+	color: #38a9d9;
 	-webkit-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
 }
 
+dd a{
+	color: #38a9d9;
+	border-bottom: 2px solid #38a9d9;
+	-webkit-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+p>a:hover,
+p>a:active,
+p>a:focus,
 dd a:hover,
 dd a:active,
 dd a:focus{
-	color: #2096bf;
-	border-bottom: 1px solid #2096bf;
+	color: #3a5d78;
+	border-bottom: 2px solid #3a5d78;
 }
 
 dt {
@@ -200,8 +218,12 @@ dt>a:focus:after {
 	transform: translateX(0px);
 }
 
-.white {
+.white, .teal {
 	color: #00B8E6;
+}
+
+.actual-white {
+	color: #fff;
 }
 
 .brand {
@@ -218,12 +240,18 @@ dt>a:focus:after {
 
 /* Ticket */
 
-.button, .get-ticket {
+.contest, .get-ticket, .button {
 	text-align: center;
 	text-transform: uppercase;
 	background-color: none;
 	padding: 1em 2.5em 0;
 	border-top: solid 6px #00B8E6
+}
+
+.button {
+	background-color: #00B8E6;
+	padding: 1em 2.5em 0;
+	border-radius: 3px;
 }
 
 .get-ticket {
@@ -234,31 +262,42 @@ dt>a:focus:after {
 	-webkit-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in;
 }
-/*
-.get-ticket:hover {
-	border-top: solid 8px #00B8E6;
-}*/
 
 .button:hover {
 	background-color: rgba(255,255,255,.6);
 }
 
+#sponsors {
+	margin: 3rem auto 0;
+	background-color: #00B8E6;
+	width: 100%;
+	z-index: 1000;
+}
+
 @media only screen and (min-width: 38em) {
 	
 	section {
-		max-width: 45rem;
-		margin: 2rem 5% 0 22rem;
+		max-width: 40rem;
+		margin: 4em 5% 0 24em;
 	}
 	
 	.get-ticket {
 		top: 5rem;
-		max-width: 12.5em;
+		max-width: 13.25em;
 		padding: 0.3em;
 		right: 0rem;
 	}
 	
 	.contest {
-		top: 12rem;
+		top: 9.5em;
+	}
+	
+	#sponsors {
+		z-index: 1000;
+		position: absolute;
+		padding: 3em 0 3em 24em;
+		background-color: #00B8E6;
+		right: 0;
 	}
 
 }
