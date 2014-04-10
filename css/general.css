@@ -26,7 +26,7 @@ html, body {
 	line-height: 1.45;
 	color: #3B3A3C;
 	font-size: .9em;
-	padding: 2% 0 3rem;
+	padding: 0 0 1.45em 0;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -35,7 +35,7 @@ header {
 }
 
 .title {
-	max-width: 40rem;
+	max-width: 23rem;
 	margin: 0 auto;
 }
 
@@ -52,12 +52,13 @@ header {
 
 .schedule-part {
 	border-bottom: solid 1px white;
-	margin: 1rem 0;
+	margin: 1.25em 0;
+	padding-left: 1.25em;
 }
 
 .schedule-part p{
 	max-width: 80%;
-	margin: 0rem 6rem 0rem;
+	margin: 0rem 2rem 0rem;
 }
 
 .schedule-part:last-child {
@@ -72,6 +73,10 @@ header {
 
 @media only screen and (min-width: 38em) {
 	
+	html, body {
+		padding: 0 0 1.95em 0;
+	}
+	
 	header {
 		position: fixed;
 		left: 0;
@@ -84,22 +89,23 @@ header {
 	
 	.schedule-part {
 		margin: .5rem 0 1rem;
+		padding-left:1.25em;
 	}
 
 	.schedule-part p{
-		max-width: 14rem;
+		max-width: 15rem;
 		margin: 0 auto 0rem;
 	}
 
 	.schedule-part>.cinco{
-		max-width: 14rem;
+		max-width: 16rem;
 		margin: 0rem auto 0rem;
 	}
 		
 	.icon-top {
 		float: left;
 		height: 4rem;
-		margin: 0rem .75rem .5rem;
+		margin: .75em .75em 0 0;
 	}
 	
 }
@@ -176,7 +182,7 @@ a {
 
 dd a{
 	color: #38a9d9;
-	border-bottom: 2px solid #38a9d9;
+	border-bottom: 0.09em solid #38a9d9;
 	-webkit-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
 }
@@ -244,14 +250,18 @@ dt>a:focus:after {
 	text-align: center;
 	text-transform: uppercase;
 	background-color: none;
-	padding: 1em 2.5em 0;
-	border-top: solid 6px #00B8E6
+	border-top: solid 6px #00B8E6;
+	background-color: rgba(255,255,255,.2);
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
 }
 
 .button {
-	background-color: #00B8E6;
-	padding: 1em 2.5em 0;
-	border-radius: 3px;
+	position: relative;
+}
+
+.margin-bottom {
+	margin-bottom: 3.25em;
 }
 
 .get-ticket {
@@ -259,13 +269,9 @@ dt>a:focus:after {
 	top: 0rem;
 	width: 100%;
 	z-index: 9000;
-	-webkit-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in;
 }
 
-.button:hover {
-	background-color: rgba(255,255,255,.6);
-}
+.contest {top: 3rem;}
 
 #sponsors {
 	margin: 3rem auto 0;
@@ -313,6 +319,10 @@ footer, .resp-footer {
 
 .social {
 	overflow: hidden;
+	text-align: right;
+}
+
+.social2 {
 	text-align: right;
 }
 

@@ -1,5 +1,5 @@
 nav a{
-	font-size: .8em;
+	font-size: 1em;
 }
 
 .nav-btn,
@@ -42,29 +42,16 @@ nav a{
     height: 100%;
 }
 
-
-@media only screen and (min-width: 25em) {
-	
-	.nav-top {
-		max-height: 0px;
-		-webkit-transition: max-height 350ms linear;
-	}
-
-	.nav-top[data-state="expanded"]{
-		max-height: 5em;
-		height: 100%;
-	}
-	
-}
-
 @media only screen and (min-width: 38em) {
 	
 	footer.init-footer {
-		display: none;
+		display: block;
+		margin-left: 21em;
+		z-index: 9000;
 	}
 	
 	.resp-footer {
-		display: block;
+		display: none;
 	}
 	
 }
