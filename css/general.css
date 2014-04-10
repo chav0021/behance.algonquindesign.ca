@@ -35,8 +35,7 @@ header {
 }
 
 .title {
-	max-width: 23rem;
-	margin: 0 auto;
+	margin: 0 0 -1em;
 }
 
 /* Schedule */
@@ -137,11 +136,6 @@ h2, .dos {font-size: 1.953em;}
 
 h3, dt, .tres {font-size: 1.563em;}
 
-dt {
-	font-weight: 800;
-	margin-top: .5rem;
-}
-
 h4, dd,f .cuatro {font-size: 1.25em;}
 
 h5, .cinco {font-size: 1em;}
@@ -161,7 +155,6 @@ small, .font_small {font-size: 0.75em;}
 section {
 	max-width: 95%;
 	margin: 3rem auto 0;
-	border-bottom: solid 2px #;
 }
 
 ul {
@@ -178,6 +171,10 @@ a {
 	color: #38a9d9;
 	-webkit-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
+}
+
+dd {
+	font-size: 1em;
 }
 
 dd a{
@@ -198,7 +195,13 @@ dd a:focus{
 }
 
 dt {
+	font-weight: 800;
+	margin-top: .5rem;
 	padding-top: .5em; 
+}
+
+dt a {
+	color: #3B3A3C;
 }
 
 dt>a:after {
@@ -207,9 +210,9 @@ dt>a:after {
     position:relative;
     left:13px;
     top:2px;
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.3s;
-	transition: transform 0.4s, opacity 0.3s;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.3s ease-in-out;
+	-moz-transition: -moz-transform 0.4s, opacity 0.3s ease-in-out;
+	transition: transform 0.4s, opacity 0.3s ease-in-out;
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
 	transform: translateX(20px);
@@ -273,11 +276,19 @@ dt>a:focus:after {
 
 .contest {top: 3rem;}
 
+.date-time {
+	width: 9em;
+	position: fixed;
+	right: 4em;
+	bottom: 6em;
+}
+
 #sponsors {
 	margin: 3rem auto 0;
 	background-color: #00B8E6;
 	width: 100%;
 	z-index: 1000;
+	padding: 2% 5%;
 }
 
 @media only screen and (min-width: 38em) {
@@ -288,20 +299,20 @@ dt>a:focus:after {
 	}
 	
 	.get-ticket {
-		top: 5rem;
+		top: 4em;
 		max-width: 13.25em;
 		padding: 0.3em;
 		right: 0rem;
 	}
 	
 	.contest {
-		top: 9.5em;
+		top: 8.5em;
 	}
 	
 	#sponsors {
 		z-index: 1000;
 		position: absolute;
-		padding: 3em 0 3em 24em;
+		padding: 5em 0 6em 24em;
 		background-color: #00B8E6;
 		right: 0;
 	}
@@ -352,6 +363,34 @@ footer, .resp-footer {
 	background-image: url(../images/instagram-blue.svg);
 }
 
+.facebook {
+	height: 1.5rem;
+	background-image: url(../images/facebook.svg);
+}
+
+.facebook:hover {
+	height: 1.5rem;
+	background-image: url(../images/facebook-blue.svg);
+}
+
+.heart {
+	position: relative;
+	text-indent: 24px;
+	padding-top: 1em;
+}
+
+.heart:before {
+	position: absolute;
+	content: url(/images/heart-01.svg);
+	height: 15px;
+	width: 15px;
+	left: -24px;
+}
+
+.email {
+	color: #fff;
+	padding: 0.5em 0 1em;
+}
 
 @media only screen and (min-width: 38em) {
 
