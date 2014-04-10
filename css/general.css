@@ -127,9 +127,13 @@ p {margin-bottom: 1.3em;}
 	font-size: 1.4em;
 }
 
+.p-med {
+	font-size: 1.1em;
+}
+
 h1, .uno {
   margin-top: 0;
-  font-size: 2.441em;
+  font-size: 5.92em;
 }
 
 h2, .dos {font-size: 1.953em;}
