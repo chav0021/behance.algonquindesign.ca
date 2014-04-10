@@ -59,11 +59,6 @@ header {
 	margin: 0rem 6rem 0rem;
 }
 
-.schedule-part h5{
-	max-width: 80%;
-	margin: 0.5rem 6rem 0rem;
-}
-
 .schedule-part:last-child {
 	border-bottom: none;
 }
@@ -83,13 +78,17 @@ header {
 		bottom:2rem;
 		max-width: 18rem;
 	}
+	
+	.schedule-part {
+		margin: .5rem 0 1rem;
+	}
 
 	.schedule-part p{
 		max-width: 14rem;
 		margin: 0 auto 0rem;
 	}
 
-	.schedule-part h5{
+	.schedule-part>.cinco{
 		max-width: 14rem;
 		margin: 0rem auto 0rem;
 	}
@@ -135,6 +134,8 @@ dt {
 }
 
 h4, dd,f .cuatro {font-size: 1.25em;}
+
+h5, .cinco {font-size: 1em;}
 
 small, .font_small {font-size: 0.8em;}
 
