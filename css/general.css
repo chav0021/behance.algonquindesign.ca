@@ -32,6 +32,10 @@ html, body {
 
 header {
 	background-color: #3B3A3C;
+	background: url(../images/header-background.jpg);
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: left center;
 }
 
 .title {
@@ -43,7 +47,6 @@ header {
 .schedule {
 	text-align: center;
 	overflow: hidden;
-	background-color: #3B3A3C;
 	color: #fff;
 	margin-top: 0;
 	text-align: left;
@@ -354,7 +357,7 @@ dt>a:focus:after {
 
 footer, .resp-footer {
 	position: fixed;
-	background-color: #3B3A3C;
+	background-color: #29292b;
 	left: 0;
 	right: 0;
 	bottom:0;
