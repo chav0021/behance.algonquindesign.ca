@@ -3,10 +3,10 @@
   padding: 0;
   letter-spacing: -0.31em;
   text-rendering: optimizespeed;
-  display: -webkit-flex;
+  /*display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;*/
 }
 
 .grid-bottom {

@@ -42,6 +42,10 @@ header {
 	background-position: left center;
 }
 
+.title {
+	
+}
+
 /* Schedule */
 
 .schedule {
@@ -53,6 +57,8 @@ header {
 }
 
 .schedule-part {
+	display: block;
+	min-height: 5em;
 	margin: 1em 0;
 	padding-left: 1.25em;
 }
@@ -73,6 +79,7 @@ header {
 	margin: 0rem 3% 0.75rem;
 }
 
+
 @media only screen and (min-width: 38em) {
 	
 	html, body {
@@ -89,14 +96,14 @@ header {
 		top: 0;
 		bottom:0;
 		height: 100%;
-		max-width: 21rem;
+		width: 21rem;
 		z-index: 8000;
 	}
 	
 	.schedule-part {
 		position: relative;
 		margin: 0;
-		padding-left:1.25em;
+		padding: .5em 0 .5em 1.25em;
 	}
 
 	.schedule-part p{
@@ -115,6 +122,33 @@ header {
 	}
 	
 }
+
+@media only screen and (min-width: 38em) and (min-height: 650px) {
+	
+	
+	.schedule-part {
+		padding: 1em 0 1em 1.25em;
+	}
+	
+	.title {
+		margin-bottom: 1rem;
+	}
+	
+}
+
+@media only screen and (min-width: 38em) and (min-height: 800px) {
+	
+	
+	.schedule-part {
+		padding: 1.25em 0 1em 1.5em;
+	}
+	
+	.title {
+		margin-bottom: 1.3rem;
+	}
+	
+}
+
 
 .main {
 	position: relative;
