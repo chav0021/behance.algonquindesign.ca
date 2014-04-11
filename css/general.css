@@ -30,6 +30,10 @@ html, body {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.contest-page {
+	padding: 2.9rem 0 6.15em 0;
+}
+
 header {
 	background-color: #3B3A3C;
 	background: url(../images/header-background.jpg);
