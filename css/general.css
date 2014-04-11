@@ -114,8 +114,8 @@ header {
 	}
 	
 	.title {
-		position: absolute; 
-		left:-5rem;
+		position: relative; 
+		margin-left:-1.25rem;
 		max-height: 5rem;
 		text-align: left;
 	}
