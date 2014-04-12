@@ -38,11 +38,11 @@ nav a{
 }
 
 .nav-top[data-state="expanded"]{
-    max-height: 15em;
+    max-height: 25em;
     height: 100%;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 45em) {
 	
 	footer.init-footer {
 		display: block;
@@ -52,6 +52,11 @@ nav a{
 	
 	.resp-footer {
 		display: none;
+	}
+	
+	.nav-top[data-state="expanded"]{
+		max-height: 15em;
+		height: 100%;
 	}
 	
 }
