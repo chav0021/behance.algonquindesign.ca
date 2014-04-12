@@ -170,11 +170,11 @@ p {margin-bottom: 1.3em;}
 
 h1, .uno {
   margin-top: 0;
-  font-size: 5.05em;
+  font-size: 2.05em;
 }
 
 .big-dos {
-	font-size: 3.36em;
+	font-size: 2em;
 }
 
 h2, .dos {font-size: 1.953em;}
@@ -351,6 +351,19 @@ dt>a:focus:after {
 	width: 100%;
 	z-index: 1000;
 	padding: 2% 5%;
+}
+
+@media only screen and (min-width: 35em) {
+
+	h1, .uno {
+	  margin-top: 0;
+	  font-size: 5.05em;
+	}
+	
+	.big-dos {
+		font-size: 3.36em;
+	}
+
 }
 
 @media only screen and (min-width: 45em) {
