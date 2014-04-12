@@ -26,12 +26,13 @@ html, body {
 	line-height: 1.45;
 	color: #3B3A3C;
 	font-size: .9em;
-	padding: 2.9em 0 1.45em 0;
+	padding: 3em 0 1.45em 0;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .contest-page {
-	padding: 2.9em 0 6.15em 0;
+	font-size: .9em;
+	padding: 3em 0 6em 0;
 }
 
 header {
@@ -87,7 +88,7 @@ header {
 	}
 	
 	.contest-page {
-		padding: 0 0 1.95em 0;
+		padding: 0 0 4em 0;
 	}
 	
 	header {
@@ -148,7 +149,6 @@ header {
 	}
 	
 }
-
 
 .main {
 	position: relative;
@@ -386,6 +386,7 @@ dt>a:focus:after {
 }
 
 @media only screen and (min-width: 60em) {
+	
 	.date-time {
 		display: block;
 		width: 12em;
@@ -393,6 +394,7 @@ dt>a:focus:after {
 		right: 3.5em;
 		bottom: 6em;
 	}
+	
 }
 
 footer, .resp-footer {
@@ -471,6 +473,10 @@ footer, .resp-footer {
 @media only screen and (min-width: 38em) {
 
 	html, body {
+		font-size: 1em;
+	}
+	
+	.contest-page {
 		font-size: 1em;
 	}
 }
